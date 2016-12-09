@@ -1,9 +1,9 @@
 doctype html
 head    
   title 
-    = yield(:title) 
-    | | Ruby on Rails Tutorial Sample App    
-    
+    = full_title(yield(:title)) 
+    -# full_titleはhelpers/application_helper.rbに記述
+     
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
