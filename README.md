@@ -1,5 +1,21 @@
 # README
 
+##使い方
+bundle install --without production
+
+その後、データベースのマイグレーションを実行
+
+rails db:migrate
+
+最後にテストを実行
+
+rails test
+
+テストが無事に通ったら、Railsサーバーを立ち上げて実行
+
+rails s
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
