@@ -40,6 +40,10 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (7.1.4)
+    bootstrap-generators (3.3.4)
+      railties (>= 3.1.0)
+    bootstrap-sass (3.2.0.0)
+      sass (~> 3.2)
     builder (3.2.2)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -71,6 +75,9 @@ GEM
     guard-minitest (2.4.4)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
+    hpricot (0.8.6)
+    html2slim (0.2.0)
+      hpricot
     i18n (0.7.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -199,10 +206,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-generators
+  bootstrap-sass
   byebug
   coffee-rails (~> 4.2)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
+  html2slim
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

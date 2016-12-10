@@ -1,8 +1,16 @@
 - provide(:title, "Home")
 
 body
-  h1 Home | Sample App
-
   p 
   | This is the home page for the 
   a> href = "http://railstutorial.jp" Ruby on Rails Tutorial sample application
+
+  .center.jumbotron
+        h1 Welcome to the Sample App
+
+        h2 This is the home page for the
+        a<> href = "http://www.railstutorial.org/" Ruby on Rails Tutorial
+        = link_to "Sign up now!", signup_path, class:"btn" "btn-lg" "btn-primary"
+
+  = link_to root_path do
+    == image_tag "rails.png", :alt => "Rails logo" 

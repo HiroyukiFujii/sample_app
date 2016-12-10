@@ -5,7 +5,7 @@ module ApplicationHelper
     if page_title.empty?                        #ページタイトルが空かどうか？
       base_title                                #空ならばベースタイトルだけを表示
     else
-      page_title + " | " + base_title           #ページタイトルと一緒にベースタイトルを表示
+      page_title + "| " + base_title           #ページタイトルと一緒にベースタイトルを表
     end
   end
 end
