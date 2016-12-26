@@ -1,0 +1,9 @@
+- provide(:title, 'All users')
+h1 All users
+
+= will_paginate
+
+.users
+  - @users.each do |user|
+    = render user
+= will_paginate
